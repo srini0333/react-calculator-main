@@ -1,0 +1,39 @@
+/* App.css */
+
+body {
+  @apply bg-gradient-to-r from-blue-500 to-purple-600;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.calculator {
+  @apply bg-blue-700 w-80 mx-auto mt-10 p-4 rounded-lg shadow-lg;
+  flex: 1;
+}
+
+input {
+  @apply w-full text-right py-4 px-0 text-2xl bg-transparent text-white;
+}
+
+.buttons {
+  @apply grid grid-cols-4 gap-4 mt-4;
+}
+
+button {
+  @apply transition duration-300 active:translate-x-1 text-xl;
+}
+
+.number {
+  @apply bg-slate-300 text-blue-700 rounded-lg p-2;
+}
+
+.operator {
+  @apply bg-blue-500 text-white rounded-lg p-2;
+}
+
+.title {
+  @apply text-white font-sans font-bold text-3xl;
+}
+
